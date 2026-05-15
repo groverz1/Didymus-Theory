@@ -384,8 +384,7 @@
         <p class="panel-note">
             Credentials are hidden in the archives.<br><br>
             Type <strong>help</strong> to see all commands.<br>
-            Start with <strong>binary function</strong>.
-        </p>
+                    </p>
     </div>
 </div>
 
