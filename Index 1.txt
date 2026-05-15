@@ -380,11 +380,6 @@
         </div>
         <div id="login-error"></div>
         <button id="login-submit">[ AUTHENTICATE ]</button>
-        <hr class="panel-divider">
-        <p class="panel-note">
-            Credentials are hidden in the archives.<br><br>
-            Type <strong>help</strong> to see all commands.<br>
-                    </p>
     </div>
 </div>
 
@@ -577,9 +572,9 @@
         mainPage.style.display = "flex";
         inputBar.style.display = "block";
         writeLines([
-            "═══════════════════════════════════════════════════════════════════",
+            "══════════════════════════════════════════════════════════════════════════════",
             "  MSU RESEARCH TERMINAL  //  DIDYMUS CORE v4.8  //  CLASSIFIED    ",
-            "═══════════════════════════════════════════════════════════════════",
+            "══════════════════════════════════════════════════════════════════════════════",
             "",
             "  SYSTEM ONLINE. ALL NODES OPERATIONAL.",
             "  SECURITY CLEARANCE REQUIRED FOR RESTRICTED ARCHIVES.",
@@ -590,7 +585,7 @@
             "",
             "  Type  help  for a full list of available commands.",
             "",
-            "═══════════════════════════════════════════════════════════════════",
+            "══════════════════════════════════════════════════════════════════════════════"
         ]);
         cmdInput.focus();
     }
@@ -619,21 +614,21 @@
 
             case "help":
                 writeLines([
-                    "╔══════════════════════════════════════════════════════════════╗",
+                    "╔══════════════════════════════════════════════════════════════════════════╗",
                     "║              DIDYMUS CORE — COMMAND DIRECTORY               ║",
-                    "╠══════════════════════════════════════════════════════════════╣",
+                    "╠══════════════════════════════════════════════════════════════════════════╣",
                     "║  NAVIGATION                                                  ║",
                     "║    help               — Display this command directory       ║",
                     "║    clear              — Clear the terminal screen            ║",
                     "║                                                              ║",
                     "║  CLASSIFIED ARCHIVES                                         ║",
                     "║    retrieve text      — Load Didymus Theory research files   ║",
-                    "║    binary function    — Decode the hidden identity matrix    ║",
                     "║                                                              ║",
                     "║  SYSTEM TOOLS                                                ║",
                     "║    system diagnostics — Run full core performance check      ║",
                     "║    matrix mode        — Engage secondary cascade interface   ║",
                     "║    self destruct      — Initiate server decoupling sequence  ║",
+                    "║    binary function    — Decode the hidden identity matrix    ║",
                     "║    decrypt            — Attempt cipher decryption protocol   ║",
                     "║    scan               — Deep array sector sweep              ║",
                     "║    override           — Force level-5 clearance bypass       ║",
@@ -641,13 +636,13 @@
                     "║                                                              ║",
                     "║  ⚠  RESTRICTED: Enter credentials in the panel on the right. ║",
                     "║     Explore commands above to retrieve your login key.       ║",
-                    "╚══════════════════════════════════════════════════════════════╝",
+                    "╚══════════════════════════════════════════════════════════════════════════╝"
                 ]);
                 break;
 
             case "retrieve text":
                 writeLine("[RETRIEVING FILE: DIDYMUS_THEORY.DAT]...", "warn");
-                writeLine("──────────────────────────────────────────────────────────────", "dim");
+                writeLine("─────────────────────────────────────────────────────────");
                 writeLine("THE DIDYMUS THEORY OF THE COSMOS:", "bright");
                 writeLine();
                 writeLine("Most systems in the universe operate on complexity — cascading");
@@ -674,7 +669,7 @@
                 writeLine();
                 writeLine("CONCLUSION: Some code was written before computers existed.", "success");
                 writeLine("            A Dad's love is the original program.", "success");
-                writeLine("──────────────────────────────────────────────────────────────", "dim");
+                writeLine("─────────────────────────────────────────────────────────");
                 break;
 
             case "binary function":
@@ -750,9 +745,9 @@
             case "clear":
                 output.innerHTML = "";
                 writeLines([
-                    "═══════════════════════════════════════════════════════════════════",
+                    "══════════════════════════════════════════════════════════════════════════════",
                     "  MSU RESEARCH TERMINAL  //  DIDYMUS CORE v4.8  //  CLASSIFIED    ",
-                    "═══════════════════════════════════════════════════════════════════",
+                    "══════════════════════════════════════════════════════════════════════════════"
                 ]);
                 break;
 
