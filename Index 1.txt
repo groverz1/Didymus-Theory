@@ -41,7 +41,7 @@
 <body>
     <div id="boot-screen">BOOTING SYSTEM...<br>Please Wait...</div>
     <div id="terminal"></div>
-    <div id="library-terminal">Welcome to the MSU Library Archives. Type the name of a book to retrieve its passage or enter the restricted access code:</div>
+    <div id="library-terminal">Welcome to the DIDYMUS Library Archives. Type the name of a book to retrieve its passage or enter the restricted access code:</div>
     <input type="text" id="input" autofocus placeholder="Enter username..." style="display:none;">
     <input type="text" id="passkey-input" placeholder="Enter restricted access code..." style="display:none;">
 
@@ -97,7 +97,7 @@
                 this.value = "";
 
                 if (stage === 0) {
-                    if (userInput === "Halloway") {
+                    if (userInput === "Didymus Rex") {
                         username = userInput;
                         stage++;
                         playSound("success-sound");
@@ -107,7 +107,7 @@
                         document.getElementById("terminal").innerText += "\nACCESS DENIED. Try again.";
                     }
                 } else if (stage === 1) {
-                    if (userInput === "EvilArch1987") {
+                    if (userInput === "Birthday-message") {
                         password = userInput;
                         stage++;
                         playSound("success-sound");
